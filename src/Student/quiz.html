@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="/src/output.css" />
+    <style>
+      .heading {
+        text-shadow: 0px 0px 15px white;
+        text-decoration: underline;
+      }
+      .main-box {
+        box-shadow: 0px 0px 15px white;
+      }
+    </style>
+  </head>
+  <body
+    class="h-screen flex justify-center items-center flex-col bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%"
+  >
+    <div class="heading font-bold text-3xl text-white mb-5">Quiz</div>
+    <div
+      class="main-box flex justify-start items-center flex-col bg-white h-80 w-70 rounded-2xl p-3"
+    >
+      <div class="time flex justify-end items-center w-full">02:15</div>
+      <div class="question flex justify-start items-center w-full">
+        1. What is the capital of france?
+      </div>
+      <div class="options flex justify-start items-center w-full flex-col">
+        <div
+          class="option1 flex justify-start items-center w-full border-2 border-gray-300 rounded-sm m-2 p-1"
+        >
+          <input type="radio" name="city" id="Paris" />
+          <label for="Paris">Paris</label>
+        </div>
+        <div
+          class="option2 flex justify-start items-center w-full border-2 border-gray-300 rounded-sm m-2 p-1"
+        >
+          <input type="radio" name="city" id="London" />
+          <label for="London">London</label>
+        </div>
+        <div
+          class="option3 flex justify-start items-center w-full border-2 border-gray-300 rounded-sm m-2 p-1"
+        >
+          <input type="radio" name="city" id="Berlin" />
+          <label for="Berlin">Berlin</label>
+        </div>
+        <div
+          class="option4 flex justify-start items-center w-full border-2 border-gray-300 rounded-sm m-2 p-1"
+        >
+          <input type="radio" name="city" id="Madrid" />
+          <label for="Madrid">Madrid</label>
+        </div>
+      </div>
+      <div
+        class="nextBtn flex justify-center items-center w-full bg-blue-600 rounded-sm m-2 p-1 text-white hover:bg-blue-500 cursor-pointer"
+      >
+        Next
+      </div>
+    </div>
+  </body>
+</html>

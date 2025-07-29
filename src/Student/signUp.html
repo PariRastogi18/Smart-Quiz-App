@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Quiz App/Student SignUp</title>
+    <link href="/src/output.css" rel="stylesheet" />
+    <style>
+      .main-box {
+        box-shadow: 0px 0px 15px white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="flex justify-around items-center w-full h-15 p-1">
+      <div class="logo font-bold text-2xl">Smart Quiz App</div>
+      <ul class="flex justify-around items-center w-120">
+        <li
+          class="w-40 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out"
+        >
+          <a href="/src/firstPage/index.html" class="text-lg"
+            ><i class="fa-solid fa-arrow-left mr-2"></i>Back to Home</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div
+      class="signUpBox h-screen bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90% flex justify-center items-center"
+    >
+      <div
+        class="main-box flex justify-center items-center flex-col h-95 w-80 bg-white rounded-2xl p-3"
+      >
+        <div class="heading text-2xl font-bold mb-1">SIGN UP</div>
+        <p class="text-gray-700">Create a new account</p>
+        <div
+          class="info flex justify-center items-start flex-col w-full pl-3 pr-3"
+        >
+          <form action="action.php">
+            <label for="1" class="text-sm mb-1">Name:</label>
+            <input
+              type="text"
+              id="1"
+              placeholder="Enter your name"
+              class="border-1 mb-1 border-solid border-gray-500 w-full rounded-sm p-1 text-sm"
+            />
+            <label for="2" class="text-sm mb-1">Email:</label>
+            <input
+              type="email"
+              id="2"
+              placeholder="Enter your email"
+              class="border-1 mb-1 border-solid border-gray-500 w-full rounded-sm p-1 text-sm"
+            />
+            <label for="3" class="text-sm mb-1">Password:</label>
+            <input
+              type="password"
+              name="password"
+              id="3"
+              placeholder="Create password"
+              class="border-1 mb-1 border-solid border-gray-500 w-full rounded-sm p-1 text-sm"
+            />
+            <label for="4" class="text-sm mb-1">Confirm Password:</label>
+            <input
+              type="password"
+              name="confirm password"
+              id="4"
+              placeholder="Confirm your password"
+              class="border-1 mb-1 border-solid border-gray-500 w-full rounded-sm p-1 text-sm"
+            />
+          </form>
+        </div>
+        <div
+          class="btn mt-5 w-70 p-1 text-1xl font-bold rounded-sm hover:bg-blue-400 cursor-pointer text-white bg-blue-500 flex justify-center items-center"
+        >
+          Sign Up
+        </div>
+        <p class="text-gray-600">
+          Already have an account?<a
+            href="/src/Student/stuLogin.html"
+            class="text-blue-600 cursor-pointer"
+            >Log</a
+          >
+        </p>
+      </div>
+    </div>
+    <hr />
+    <!-- footer -->
+    <div
+      class="copyrightFooter flex justify-center items-center w-full h-16 text-blue-950 bg-blue-300 border-t py-4"
+    >
+      © 2025 Smart Quiz App. All rights reserved.
+    </div>
+    <!-- footer close -->
+    <script
+      src="https://kit.fontawesome.com/307ce2b8ce.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

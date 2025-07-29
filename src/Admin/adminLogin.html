@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Quiz App/Admin Login</title>
+    <link href="/src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="flex justify-around items-center w-full h-15 p-1">
+      <div class="logo font-bold text-2xl">Smart Quiz App</div>
+      <ul class="flex justify-around items-center w-120">
+        <li
+          class="w-40 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out"
+        >
+          <a href="/src/firstPage/index.html" class="text-lg"
+            ><i class="fa-solid fa-arrow-left mr-2"></i>Back to Home</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div
+      class="adminbox bg-slate-950 flex justify-center items-center flex-col w-full h-screen"
+    >
+      <div class="heading text-white mb-10 font-semibold text-4xl">
+        Admin Login
+      </div>
+      <div
+        class="adminBox h-70 w-70 flex justify-center items-center flex-col bg-slate-900 rounded-2xl"
+      >
+        <img src="/src/Images/adminLogo.png" alt="Logo" class="h-17 w-17" />
+        <div class="text-3xl font-semibold text-white">Login</div>
+
+        <input
+          type="email"
+          placeholder="Email"
+          class="w-58 h-7 bg-gray-800 text-gray-200 m-2 rounded-sm pl-2"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          class="w-58 h-7 bg-gray-800 text-gray-200 m-2 rounded-sm pl-2"
+        />
+        <div
+          class="toforget w-full flex justify-end items-center mr-10 text-gray-400"
+        >
+          <a href="/src/Admin/forgetPage.html">Forget Password?</a>
+        </div>
+        <div
+          class="loginbtn w-58 h-8 text-white flex justify-center items-center bg-blue-950 hover:bg-blue-900 rounded-sm m-2 cursor-pointer"
+        >
+          Login
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- footer -->
+    <div
+      class="copyrightFooter flex justify-center items-center w-full h-16 text-blue-950 bg-blue-300 py-4 border-t"
+    >
+      © 2025 Smart Quiz App. All rights reserved.
+    </div>
+    <!-- footer close -->
+    <script
+      src="https://kit.fontawesome.com/307ce2b8ce.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
