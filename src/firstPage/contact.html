@@ -2,64 +2,62 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, telephone=no, email=no"
+    />
     <title>Contact Us</title>
     <link rel="stylesheet" href="/src/output.css" />
-    <style>
-      .links .links-info a {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        width: 100%;
-        text-decoration: none;
-        color: rgb(23, 23, 67);
-        margin-bottom: 2px;
-      }
-      .links .links-info a:hover {
-        text-decoration: underline;
-      }
-      .contact-info {
-        padding: 2rem;
-      }
-      .contact-info p {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        width: 100%;
-        padding: 0.5rem;
-      }
-    </style>
+    <link rel="stylesheet" href="/src/firstPage/contact.css" />
   </head>
-  <body>
-    <nav class="flex justify-around items-center w-full h-15 p-1">
+  <body class="w-fit">
+    <nav
+      class="flex justify-around items-center w-full max-md:h-auto h-15 p-1 flex-wrap"
+    >
       <div class="logo font-bold text-2xl">Smart Quiz App</div>
-      <ul class="flex justify-around items-center w-120">
-        <li
-          class="w-24 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out"
-        >
-          <a href="/src/firstPage/index.html" class="text-lg">Home</a>
-        </li>
-        <li
-          class="w-24 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out"
-        >
-          <a href="/src/firstPage/about.html" class="text-lg">About Us</a>
-        </li>
-        <li
-          class="w-24 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out"
-        >
-          <a href="/src/Student/stuLogin.html" class="text-lg">Login</a>
-        </li>
-        <li
-          class="w-24 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out"
-        >
-          <a href="/src/Student/signUp.html" class="text-lg">Sign Up</a>
-        </li>
-        <li
-          class="w-24 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out"
-        >
-          <a href="/src/firstPage/contact.html" class="text-lg">Contact Us</a>
-        </li>
-      </ul>
+      <input type="checkbox" id="opneSideBarMenu" />
+      <label for="opneSideBarMenu" class="sideBarIconToggle">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <div class="tabs">
+        <ul class="flex justify-around items-center w-120">
+          <li>
+            <a
+              href="/src/firstPage/index.html"
+              class="text-lg w-24 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out hover:text-white"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/firstPage/about.html"
+              class="text-lg w-24 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out hover:text-white"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/Student/stuLogin.html"
+              class="text-lg w-24 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out hover:text-white"
+              >Login</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/Student/signUp.html"
+              class="text-lg w-24 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out hover:text-white"
+              >Sign Up</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/firstPage/contact.html"
+              class="text-lg w-24 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out hover:text-white"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
     <br />
 
@@ -82,7 +80,7 @@
           <label for="name" class="text-lg font-semibold">Name</label>
           <input
             type="text"
-            class="w-full font-medium p-0.5 border-2 border-gray-300 rounded-sm"
+            class="w-full font-medium p-0.5 border-2 border-gray-300 rounded-sm outline-0"
           />
         </div>
         <div
@@ -91,7 +89,7 @@
           <label for="email" class="text-lg font-semibold">Email</label>
           <input
             type="email"
-            class="w-full font-medium p-0.5 border-2 border-gray-300 rounded-sm"
+            class="w-full font-medium p-0.5 border-2 border-gray-300 rounded-sm outline-0"
           />
         </div>
         <div
@@ -101,7 +99,7 @@
           <textarea
             name="msg"
             id="1"
-            class="w-full font-medium p-0.5 border-2 border-gray-300 rounded-sm"
+            class="w-full font-medium p-0.5 border-2 border-gray-300 rounded-sm outline-0"
             placeholder="Write message..."
           ></textarea>
         </div>
@@ -112,18 +110,16 @@
           Send
         </div>
       </div>
-      <div class="contactImg w-2/5 flex justify-center items-center">
+      <div class="contactImg w-2/5 md:flex justify-center items-center">
         <img src="/src/Images/contactImg.png" alt="Contact image" />
       </div>
     </div>
     <br />
     <hr />
     <!-- footer -->
-    <div
-      class="footer w-full h-60 bg-blue-300 flex justify-around items-center"
-    >
+    <div class="footer w-full bg-blue-300 flex justify-around items-start">
       <div
-        class="aboutFooter h-60 bg-blue-300 flex justify-start items-center w-100 flex-col p-4"
+        class="aboutFooter bg-blue-300 flex justify-start items-center w-full flex-col p-4"
       >
         <div
           class="about-h flex justify-start items-center text-lg font-semibold text-blue-950 underline"
@@ -133,14 +129,13 @@
         <div
           class="about-info flex justify-start items-center text-blue-950 p-8"
         >
-          Smart Quiz App is a user-friendly platform for creating, taking, and
-          evaluating quizzes. Designed for both students and educators, it
-          offers intuitive tools to make learning and assessment simple,
-          efficient, and engaging.
+          Smart Quiz App makes creating, taking, and evaluating quizzes easy and
+          engaging. Perfect for students and educators, it simplifies learning
+          and assessment.
         </div>
       </div>
       <div
-        class="links h-60 bg-blue-300 flex justify-start items-center w-100 flex-col p-4"
+        class="links bg-blue-300 flex justify-start items-center w-full flex-col p-4"
       >
         <div
           class="links-h flex justify-start items-center text-lg font-semibold text-blue-950 underline"
@@ -159,7 +154,7 @@
         </div>
       </div>
       <div
-        class="contactFooter h-60 bg-blue-300 flex justify-start items-center w-100 flex-col p-4"
+        class="contactFooter bg-blue-300 flex justify-start items-center w-full flex-col p-4"
       >
         <div
           class="contact-h underline flex justify-start items-center text-lg font-semibold text-blue-950"
@@ -167,20 +162,22 @@
           <i class="fa-solid fa-phone mr-2"></i>Contact Us
         </div>
         <div
-          class="contact-info flex justify-start items-center w-full flex-col text-blue-950"
+          class="contact-info flex justify-center items-center w-full flex-col text-blue-950"
         >
           <p>
-            <b><i class="fa-solid fa-envelope mr-2"></i>Email: </b>
+            <b class="flex justify-center items-center"
+              ><i class="fa-solid fa-envelope mr-2"></i>Email:</b
+            >
             rastogipari225@gmail.com
           </p>
           <p>
-            <b><i class="fa-solid fa-phone mr-2"></i>Phone: </b>8273473292
+            <b><i class="fa-solid fa-phone mr-2"></i>Phone:</b>8273473292
           </p>
         </div>
       </div>
     </div>
     <div
-      class="copyrightFooter flex justify-center items-center w-full h-8 text-blue-950 bg-blue-300"
+      class="copyrightFooter flex justify-center items-center w-full text-blue-950 bg-blue-300 bottom-0 inset-x-0 whitespace-nowrap"
     >
       © 2025 Smart Quiz App. All rights reserved ||
       <i class="fa-brands fa-facebook mr-2"></i>

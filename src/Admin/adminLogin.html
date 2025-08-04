@@ -8,12 +8,12 @@
   </head>
   <body>
     <nav class="flex justify-around items-center w-full h-15 p-1">
-      <div class="logo font-bold text-2xl">Smart Quiz App</div>
-      <ul class="flex justify-around items-center w-120">
-        <li
-          class="w-40 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out"
-        >
-          <a href="/src/firstPage/index.html" class="text-lg"
+      <div class="logo font-bold max-md:text-lg text-2xl">Smart Quiz App</div>
+      <ul class="flex justify-around items-center w-120 max-md:w-40">
+        <li>
+          <a
+            href="/src/firstPage/index.html"
+            class="text-lg max-md:text-sm w-40 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out hover:text-white"
             ><i class="fa-solid fa-arrow-left mr-2"></i>Back to Home</a
           >
         </li>
@@ -34,13 +34,20 @@
         <input
           type="email"
           placeholder="Email"
-          class="w-58 h-7 bg-gray-800 text-gray-200 m-2 rounded-sm pl-2"
+          class="w-58 h-7 bg-gray-800 text-gray-200 m-2 rounded-sm pl-2 outline-0"
         />
-        <input
-          type="password"
-          placeholder="Password"
-          class="w-58 h-7 bg-gray-800 text-gray-200 m-2 rounded-sm pl-2"
-        />
+        <div
+          class="inputPass w-58 h-7 bg-gray-800 text-gray-200 m-2 rounded-sm pl-2 flex justify-start items-center"
+        >
+          <input
+            type="password"
+            placeholder="Password"
+            class="outline-0"
+            id="pass"
+          />
+          <i class="fa-solid fa-eye-slash cursor-pointer" id="eyeIcon"></i>
+        </div>
+
         <div
           class="toforget w-full flex justify-end items-center mr-10 text-gray-400"
         >
@@ -61,6 +68,21 @@
       © 2025 Smart Quiz App. All rights reserved.
     </div>
     <!-- footer close -->
+
+    <script>
+      let eyeIcon = document.querySelector("#eyeIcon");
+      let password = document.querySelector("#pass");
+
+      eyeIcon.addEventListener("click", () => {
+        if (password.type == "password") {
+          password.type = "text";
+          eyeIcon.className = "fa-solid fa-eye";
+        } else {
+          password.type = "password";
+          eyeIcon.className = "fa-solid fa-eye-slash";
+        }
+      });
+    </script>
     <script
       src="https://kit.fontawesome.com/307ce2b8ce.js"
       crossorigin="anonymous"
