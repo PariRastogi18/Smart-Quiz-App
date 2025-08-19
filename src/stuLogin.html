@@ -9,12 +9,21 @@
   </head>
   <body>
     <nav class="flex justify-around items-center w-full h-15 p-1">
-      <div class="logo font-bold max-md:text-lg text-2xl">Smart Quiz App</div>
+      <div
+        class="logo font-bold max-md:text-lg text-2xl flex justify-center items-center"
+      >
+        <img
+          src="/src/Images/smart-logo.jpg"
+          alt="smart-logo"
+          height="50px"
+          width="50px"
+        />Smart Quiz App
+      </div>
       <ul class="flex justify-around items-center max-md:w-40 w-120">
         <li>
           <a
             href="/src/index.html"
-            class="max-md:text-sm text-lg w-40 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out hover:text-white"
+            class="max-md:text-sm text-lg w-40 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out hover:text-white transform hover:scale-110"
             ><i class="fa-solid fa-arrow-left mr-2"></i>Back to Home</a
           >
         </li>
@@ -36,8 +45,10 @@
             <i class="fa-solid fa-eye-slash" id="eyeIcon"></i>
           </div>
         </div>
-        <div class="btn">Login</div>
-        <a href="/src/Student/forgetPage.html">Forget Password?</a>
+        <div class="btn transform hover:scale-105 duration-300 ease-in-out">
+          Login
+        </div>
+        <a href="/src/forgetPage.html">Forget Password?</a>
       </div>
     </div>
     <hr />

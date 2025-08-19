@@ -13,12 +13,21 @@
   </head>
   <body>
     <nav class="flex justify-around items-center w-full h-15 p-1">
-      <div class="logo font-bold max-md:text-lg text-2xl">Smart Quiz App</div>
+      <div
+        class="logo font-bold max-md:text-lg text-2xl flex justify-center items-center"
+      >
+        <img
+          src="/src/Images/smart-logo.jpg"
+          alt="smart-logo"
+          height="50px"
+          width="50px"
+        />Smart Quiz App
+      </div>
       <ul class="flex justify-around items-center w-120 max-md:w-40">
         <li>
           <a
             href="/src/index.html"
-            class="text-lg max-md:text-sm w-40 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out hover:text-white"
+            class="text-lg max-md:text-sm w-40 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out hover:text-white transform hover:scale-110"
             ><i class="fa-solid fa-arrow-left mr-2"></i>Back to Home</a
           >
         </li>
@@ -77,16 +86,17 @@
               />
               <i class="fa-solid fa-eye-slash cursor-pointer" id="eyeIcon2"></i>
             </div>
+            <button
+              class="btn mt-5 w-70 p-1 text-1xl font-bold rounded-sm hover:bg-blue-400 cursor-pointer text-white bg-blue-500 flex justify-center items-center transform hover:scale-105 duration-300 ease-in-out"
+            >
+              Sign Up
+            </button>
           </form>
         </div>
-        <div
-          class="btn mt-5 w-70 p-1 text-1xl font-bold rounded-sm hover:bg-blue-400 cursor-pointer text-white bg-blue-500 flex justify-center items-center"
-        >
-          Sign Up
-        </div>
+
         <p class="text-gray-600">
           Already have an account?<a
-            href="/src/Student/stuLogin.html"
+            href="/src/stuLogin.html"
             class="text-blue-600 cursor-pointer"
             >Log</a
           >
