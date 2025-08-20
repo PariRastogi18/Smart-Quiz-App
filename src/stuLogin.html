@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart Quiz App/Student Login</title>
     <link rel="stylesheet" href="style-2.css" />
-    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="output.css" />
   </head>
   <body>
     <nav class="flex justify-around items-center w-full h-15 p-1">
@@ -13,7 +13,7 @@
         class="logo font-bold max-md:text-lg text-2xl flex justify-center items-center"
       >
         <img
-          src="/src/Images/smart-logo.jpg"
+          src="Images/smart-logo.jpg"
           alt="smart-logo"
           height="50px"
           width="50px"
@@ -22,7 +22,7 @@
       <ul class="flex justify-around items-center max-md:w-40 w-120">
         <li>
           <a
-            href="/src/index.html"
+            href="index.html"
             class="max-md:text-sm text-lg w-40 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out hover:text-white transform hover:scale-110"
             ><i class="fa-solid fa-arrow-left mr-2"></i>Back to Home</a
           >
@@ -37,18 +37,22 @@
       <div class="main-outer">
         <b>Login</b>
         <div class="main-box">
-          <label for="">Email:</label>
-          <input type="email" />
-          <label for="">Password:</label>
-          <div class="inputPass">
-            <input type="password" id="pass" />
-            <i class="fa-solid fa-eye-slash" id="eyeIcon"></i>
-          </div>
+          <form method="post" action="stuloginCode.jsp">
+            <label for="">Email:</label>
+            <input type="email" />
+            <label for="">Password:</label>
+            <div class="inputPass">
+              <input type="password" id="pass" />
+              <i class="fa-solid fa-eye-slash" id="eyeIcon"></i>
+            </div>
+            <br />
+            <div class="btn transform hover:scale-105 duration-300 ease-in-out">
+              Login
+            </div>
+          </form>
         </div>
-        <div class="btn transform hover:scale-105 duration-300 ease-in-out">
-          Login
-        </div>
-        <a href="/src/forgetPage.html">Forget Password?</a>
+
+        <a href="forgetPage.html">Forget Password?</a>
       </div>
     </div>
     <hr />
