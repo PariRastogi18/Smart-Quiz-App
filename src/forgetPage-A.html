@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forget Page</title>
+    <link rel="stylesheet" href="/src/output.css" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+  </head>
+  <body>
+    <nav class="flex justify-around items-center w-full h-15 p-1">
+      <div
+        class="logo font-bold max-md:text-lg text-2xl flex justify-center items-center"
+      >
+        <img
+          src="Images/smart-logo.jpg"
+          alt="smart-logo"
+          height="50px"
+          width="50px"
+        />Smart Quiz App
+      </div>
+      <ul class="flex justify-around items-center w-120 max-md:w-40">
+        <li>
+          <a
+            href="adminLogin.html"
+            class="text-lg max-md:text-sm w-40 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out hover:text-white transform hover:scale-110"
+            ><i class="fa-solid fa-arrow-left mr-2"></i>Back to Login</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="forgetBox relative">
+      <img
+        src="Images/forgetPageImg.jpg"
+        alt="Image"
+        class="h-screen w-full object-cover flex justify-center items-center"
+      />
+      <div
+        class="forgetMain absolute inset-0 flex justify-center items-center h-screen w-full"
+      >
+        <div
+          class="forgetOuter w-80 h-70 bg-white p-5 rounded-2xl flex justify-center items-center flex-col"
+        >
+          <div class="main-outer flex justify-center items-center flex-col">
+            <b class="text-3xl font-bold">Forget Password</b>
+            <p class="text-gray-500">Enter your email to reset password.</p>
+            <div
+              class="main-box flex justify-center items-start flex-col m-5 w-full"
+            >
+              <label for="email" class="text-lg">Email:</label>
+              <input
+                type="email"
+                class="border-2 border-gray-300 p-1 w-full rounded-sm outline-0"
+              />
+            </div>
+            <div
+              class="btn flex justify-center items-center w-full h-10 bg-blue-500 hover:bg-blue-400 rounded-sm text-white cursor-pointer font-semibold transform hover:scale-105 duration-300 ease-in-out"
+            >
+              Reset Password
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div
+      class="copyrightFooter flex justify-center items-center w-full h-16 text-blue-950 bg-blue-300 border-t border-2 py-4"
+    >
+      © 2025 Smart Quiz App. All rights reserved.
+    </div>
+    <!-- footer close -->
+    <script
+      src="https://kit.fontawesome.com/307ce2b8ce.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

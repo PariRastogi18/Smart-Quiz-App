@@ -28,7 +28,7 @@
 }
 .main-outer {
   width: 17rem;
-  height: 50vh;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;

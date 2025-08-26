@@ -81,41 +81,43 @@
       <div
         class="contactBox w-2/5 flex justify-start items-start h-100 flex-col p-9 rounded-2xl border-2 border-gray-300"
       >
-        <div
-          class="divName flex justify-start items-start w-full h-20 p-1 flex-col"
-        >
-          <label for="name" class="text-lg font-semibold">Name</label>
-          <input
-            type="text"
-            class="w-full font-medium p-0.5 border-2 border-gray-300 rounded-sm outline-0"
-          />
-        </div>
-        <div
-          class="divEmail flex justify-start items-start w-full h-20 p-1 flex-col"
-        >
-          <label for="email" class="text-lg font-semibold">Email</label>
-          <input
-            type="email"
-            class="w-full font-medium p-0.5 border-2 border-gray-300 rounded-sm outline-0"
-          />
-        </div>
-        <div
-          class="divmsg flex justify-start items-start w-full h-30 p-1 flex-col"
-        >
-          <label for="msg" class="text-lg font-semibold">Message</label>
-          <textarea
-            name="msg"
-            id="1"
-            class="w-full font-medium p-0.5 border-2 border-gray-300 rounded-sm outline-0"
-            placeholder="Write message..."
-          ></textarea>
-        </div>
-        <br />
-        <div
-          class="contactBtn w-20 h-10 bg-blue-500 hover:bg-blue-400 text-lg text-white flex justify-center items-center rounded-sm cursor-pointer transform hover:scale-105 duration-300 ease-in-out"
-        >
-          Send
-        </div>
+        <form action="" class="w-full">
+          <div
+            class="divName flex justify-start items-start w-full h-20 p-1 flex-col"
+          >
+            <label for="name" class="text-lg font-semibold">Name</label>
+            <input
+              type="text"
+              class="w-full font-medium p-0.5 border-2 border-gray-300 rounded-sm outline-0"
+            />
+          </div>
+          <div
+            class="divEmail flex justify-start items-start w-full h-20 p-1 flex-col"
+          >
+            <label for="email" class="text-lg font-semibold">Email</label>
+            <input
+              type="email"
+              class="w-full font-medium p-0.5 border-2 border-gray-300 rounded-sm outline-0"
+            />
+          </div>
+          <div
+            class="divmsg flex justify-start items-start w-full h-30 p-1 flex-col"
+          >
+            <label for="msg" class="text-lg font-semibold">Message</label>
+            <textarea
+              name="msg"
+              id="1"
+              class="w-full font-medium p-0.5 border-2 border-gray-300 rounded-sm outline-0"
+              placeholder="Write message..."
+            ></textarea>
+          </div>
+          <br />
+          <button
+            class="contactBtn w-20 h-10 bg-blue-500 hover:bg-blue-400 text-lg text-white flex justify-center items-center rounded-sm cursor-pointer transform hover:scale-105 duration-300 ease-in-out"
+          >
+            Send
+          </button>
+        </form>
       </div>
       <div class="contactImg w-2/5 md:flex justify-center items-center">
         <img src="Images/contactImg.png" alt="Contact image" />

@@ -183,9 +183,14 @@
   justify-content: center;
   align-items: center;
 }
-#img-intro img {
+#img-intro #img img {
   height: 70vh;
-  width: auto;
+  width: 100%;
+}
+#img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #benefites {
   display: flex;
@@ -236,16 +241,16 @@
 .about-f .about-info {
   display: flex;
   justify-content: start;
-  align-items: center;
-  padding: 5px;
-  height: 30vh;
+  align-items: start;
+  padding: 2rem 0;
+  height: auto;
 }
 .links .links-info {
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 .links .links-info a {
   display: flex;
@@ -260,14 +265,14 @@
   text-decoration: underline;
 }
 .contact-info {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 .contact-info p {
   display: flex;
   justify-content: start;
   align-items: center;
   width: 100%;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
 }
 .contact-info p b {
   display: flex;
@@ -303,7 +308,7 @@ i {
     font-size: small;
   }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 800px) {
   #tabs {
     width: 100%;
     max-height: 0;
@@ -343,6 +348,24 @@ i {
   }
   #text-intro p {
     font-size: 2rem;
+  }
+  @keyframes typing1 {
+    0% {
+      width: 0;
+    }
+    50% {
+      /* width: 28%; */
+      width: 13.5rem;
+    }
+  }
+  @keyframes typing2 {
+    0% {
+      width: 0;
+    }
+    50% {
+      /* width: 38%; */
+      width: 17.5rem;
+    }
   }
   .benefit {
     font-size: 1rem;

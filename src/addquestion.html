@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="h-screen flex">
+    <div
+      class="firstSide w-1/4 bg-blue-950 flex justify-start items-center pt-5 pl-10 pr-10 flex-col relative"
+    >
+      <div
+        class="heading flex justify-center items-center w-full text-2xl font-bold text-white"
+      >
+        <i class="fa-solid fa-user-tie mr-2"></i>
+        Admin Dashboard
+      </div>
+      <a
+        href="adminDash.html"
+        class="option1 heading flex justify-start items-center w-full text-1xl font-semibold text-white mt-2 mb-2 hover:bg-blue-500 rounded-sm p-2 cursor-pointer transition delay-150 duration-100 ease-in-out"
+      >
+        <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>Dashboard
+      </a>
+      <a
+        href="addQuzzies.html"
+        class="option2 heading flex justify-start items-center w-full text-1xl font-semibold text-white mt-1 mb-2 hover:bg-blue-500 rounded-sm p-2 cursor-pointer transition delay-150 duration-100 ease-in-out"
+      >
+        <i class="fa-solid fa-plus mr-2"></i>Add Quiz
+      </a>
+      <div
+        class="option3 heading flex justify-start items-center w-full text-1xl font-semibold text-white mt-1 mb-2 hover:bg-blue-500 rounded-sm p-2 cursor-pointer transition delay-150 duration-100 ease-in-out"
+      >
+        <i class="fa-solid fa-question mr-2"></i>Quizzes
+      </div>
+      <div
+        class="option3 heading flex justify-start items-center w-full text-1xl font-semibold text-white mt-1 mb-2 hover:bg-blue-500 rounded-sm p-2 cursor-pointer transition delay-150 duration-100 ease-in-out"
+      >
+        <i class="fa-solid fa-users mr-2"></i>Students
+      </div>
+      <div
+        class="option4 heading flex justify-start items-center w-full text-1xl font-semibold text-white mt-1 mb-2 hover:bg-blue-500 rounded-sm p-2 cursor-pointer transition delay-150 duration-100 ease-in-out"
+      >
+        <i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>Logout
+      </div>
+    </div>
+    <div class="secondSide w-3/4 flex-1 p-10 overflow-y-auto">
+      <div
+        class="nev text-4xl text-blue-950 font-bold shadow-2xs flex justify-between items-center"
+      >
+        <div class="heading">
+          <i class="fa-solid fa-plus mr-2"></i> Add Questions
+        </div>
+        <a
+          href="addQuzzies.html"
+          class="text-lg max-md:text-sm w-50 h-10 flex justify-center items-center hover:bg-blue-300 p-0.5 rounded-sm duration-300 ease-in-out hover:text-white transform hover:scale-110"
+          ><i class="fa-solid fa-arrow-left mr-2"></i>Back to Add Quiz</a
+        >
+      </div>
+      <div class="outer flex justify-center items-center">
+        <form
+          action=""
+          class="w-200 h-115 m-5 p-5 shadow-2xl flex justify-start items-start flex-col"
+        >
+          <div class="row1 flex flex-col w-full p-3">
+            <label for="" class="text-xl font-semibold">Question</label>
+            <input
+              type="text"
+              name="Question"
+              class="border-2 border-gray-300 rounded-sm h-9 p-2 text-xl"
+            />
+          </div>
+          <div class="row2 flex w-full">
+            <div class="option1 flex flex-col w-2/4 p-3">
+              <label for="" class="text-xl font-semibold">Option 1</label>
+              <input
+                type="text"
+                name="option1"
+                class="border-2 border-gray-300 rounded-sm h-9 p-2 text-xl"
+              />
+            </div>
+            <div class="option2 flex flex-col w-2/4 p-3">
+              <label for="" class="text-xl font-semibold">Option 2</label>
+              <input
+                type="text"
+                name="option2"
+                class="border-2 border-gray-300 rounded-sm h-9 p-2 text-xl"
+              />
+            </div>
+          </div>
+          <div class="row3 flex w-full">
+            <div class="option3 flex flex-col w-2/4 p-3">
+              <label for="" class="text-xl font-semibold">Option 3</label>
+              <input
+                type="text"
+                name="option3"
+                class="border-2 border-gray-300 rounded-sm h-9 p-2 text-xl"
+              />
+            </div>
+            <div class="option4 flex flex-col w-2/4 p-3">
+              <label for="" class="text-xl font-semibold">Option 4</label>
+              <input
+                type="text"
+                name="option4"
+                class="border-2 border-gray-300 rounded-sm h-9 p-2 text-xl"
+              />
+            </div>
+          </div>
+          <div class="row4 flex flex-col w-full p-3">
+            <label for="" class="text-xl font-semibold">Correct Answer</label>
+            <input
+              type="text"
+              p-2
+              text-xl
+              name="Answer"
+              class="border-2 border-gray-300 rounded-sm h-9"
+            />
+          </div>
+          <div class="btns flex justify-between items-center w-full">
+            <button
+              class="text-2xl text-white bg-blue-900 w-25 h-auto flex justify-center items-center rounded-sm duration-300 ease-in-out transform hover:scale-110 cursor-pointer p-1 m-3"
+            >
+              Submit
+            </button>
+            <a
+              href="addquestion.html"
+              class="text-2xl text-white bg-blue-900 w-40 h-auto flex justify-center items-center rounded-sm duration-300 ease-in-out transform hover:scale-110 cursor-pointer p-1 m-3"
+            >
+              <i class="fa-solid fa-plus mr-2"></i> Add More
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/307ce2b8ce.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
